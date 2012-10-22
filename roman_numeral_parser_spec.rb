@@ -1,3 +1,5 @@
+require './roman_numeral_parser'
+
 describe RomanNumeralParser do
 	before(:each) do
 		@parser = RomanNumeralParser.new

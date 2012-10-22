@@ -10,9 +10,9 @@ class RomanNumeralParser
 	def parse roman
 		roman.length.times do |i|
 			char = roman[i]
-			nextChar = roman[i+1]
+			next_char = roman[i+1]
 			unless next_char.nil?
-				if get_value(char) < get_value(nextChar)
+				if get_value(char) < get_value(next_char)
 					parsed_negative_value(char)
 					next
 				end
